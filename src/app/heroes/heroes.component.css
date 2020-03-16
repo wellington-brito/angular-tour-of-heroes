@@ -1,0 +1,78 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .heroes li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  .list-card {
+    width: max-content; 
+    height: fit-content;
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .inputs-card {
+    width: min-content; 
+    margin-left: 10px; 
+    margin-top: 10px;
+  }
+  /*div.op1 {
+    width: 15%;
+    display: inline-block;
+    background-color: rgb(206, 179, 179);
+    text-align: center;
+    margin-left: 10px; 
+    padding: 1vw 0vw 1vw 0vw;
+    min-width:40vw;
+}
+
+div.op2 {
+    width: 15%;
+    background-color:  rgb(206, 179, 179);
+    display: inline-block;
+    margin-right: 0vw;
+    text-align: center;
+    margin-left: 10px; 
+    margin-top: 1px;
+    padding: 1vw 0vw 1vw 0vw;
+    min-width:40vw;
+    
+}*/
