@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      One of three columns
       <mat-card >
         <mat-card-header>
             <mat-card-title>{{hero.name}}</mat-card-title>
@@ -16,20 +15,27 @@
     </mat-card>
     </div>
     <div class="col-sm">
-      One of three columns
       <mat-card>
-        <h2>My Heroes</h2>
+        <!--<h2>My Heroes</h2>
         <ul class="heroes">
           <li *ngFor="let hero of heroes"
           [class.selected]="hero === selectedHero"
           (click)="onSelect(hero)">
             <span class="badge">{{hero.id}}</span> {{hero.name}}
           </li>
+        </ul>-->
+        <h2>My Heroes</h2>
+        <ul class="heroes">
+          <li *ngFor="let hero of heroes"
+            [class.selected]="hero === selectedHero"
+            (click)="onSelect(hero)">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          </li>
         </ul>
+        <app-hero-detail [hero]="selectedHero"></app-hero-detail>
       </mat-card>
     </div>
     <div class="col-sm">
-      One of three columns
       <mat-card>
         <div *ngIf="selectedHero">
           <mat-card-title>{{selectedHero.name}}</mat-card-title>
