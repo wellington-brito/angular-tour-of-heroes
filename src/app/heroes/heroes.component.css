@@ -54,25 +54,16 @@
     margin-left: 10px; 
     margin-top: 10px;
   }
-  /*div.op1 {
-    width: 15%;
-    display: inline-block;
-    background-color: rgb(206, 179, 179);
-    text-align: center;
-    margin-left: 10px; 
-    padding: 1vw 0vw 1vw 0vw;
-    min-width:40vw;
-}
 
-div.op2 {
-    width: 15%;
-    background-color:  rgb(206, 179, 179);
-    display: inline-block;
-    margin-right: 0vw;
-    text-align: center;
-    margin-left: 10px; 
-    margin-top: 1px;
-    padding: 1vw 0vw 1vw 0vw;
-    min-width:40vw;
-    
-}*/
+  mat-card:not([class*=mat-elevation-z]) {
+    background: rgb(88, 97, 104);
+    box-shadow: 0 2px 1px -1px rgb(3, 3, 3), 
+                0 1px 1px 0 rgb(0, 0, 0), 
+                0 1px 3px 0 rgb(0, 0, 0);
+  }
+  span{
+    color: #ffffff;
+  }
+  input{
+    color: #ffffff;
+  }

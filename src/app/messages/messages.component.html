@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <mat-card class="card">
+            <mat-card-title>
+                <span *ngIf="messageService.messages.length">Mensagens</span>
+                <span *ngIf="messageService.messages.length <= 0">Sem Mensagems</span>
+            </mat-card-title>
+            <mat-card-content *ngIf="messageService.messages.length">               
+                <mat-card-subtitle *ngFor='let message of messageService.messages'><span>{{message}}</span></mat-card-subtitle>               
+            </mat-card-content> 
+            <mat-form-field *ngIf="messageService.messages.length">                                                                                                      
+                <button mat-raised-button  (click)="messageService.clear()">Clear</button>
+            </mat-form-field>
+          </mat-card>
+
+      </div>
+    </div>
+</div>
+

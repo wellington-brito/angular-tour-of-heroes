@@ -1,0 +1,20 @@
+mat-card:not([class*=mat-elevation-z]) {
+    height: max-content;
+    width: 200px; 
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(88, 97, 104);
+    box-shadow: 0 2px 1px -1px rgb(3, 3, 3), 
+                0 1px 1px 0 rgb(0, 0, 0), 
+                0 1px 3px 0 rgb(0, 0, 0);
+  }
+  span{
+    color: #ffffff;
+  }
+
+  button{
+   background: #ffffff;
+   margin-left: 100px;
+
+  }

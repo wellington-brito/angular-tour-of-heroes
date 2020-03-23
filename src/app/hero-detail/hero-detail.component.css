@@ -1,0 +1,19 @@
+  .inputs-card {
+    width: min-content; 
+    margin-left: 10px; 
+    margin-top: 10px;
+  }
+
+  mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px rgb(3, 3, 3), 
+                0 1px 1px 0 rgb(0, 0, 0), 
+                0 1px 3px 0 rgb(0, 0, 0);
+                
+    background: rgb(88, 97, 104);
+   }
+  span{
+    color: #ffffff;
+  }
+  input{
+    color: #ffffff;
+  }
