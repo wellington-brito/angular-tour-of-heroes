@@ -1,6 +1,6 @@
 mat-card:not([class*=mat-elevation-z]) {
     height: max-content;
-    width: 200px; 
+    width: 18%; 
     margin-left: 10px; 
     margin-top: 10px;
     margin-bottom: 10px;
@@ -13,8 +13,13 @@ mat-card:not([class*=mat-elevation-z]) {
     color: #ffffff;
   }
 
-  button{
-   background: #ffffff;
-   margin-left: 100px;
-
+  
+  button:focus {
+    outline: none;
   }
+
+  button{
+    background: #ffffff;
+    margin-left: 100px;
+  }
+  

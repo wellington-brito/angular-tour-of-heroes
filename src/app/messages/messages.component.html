@@ -9,9 +9,9 @@
             <mat-card-content *ngIf="messageService.messages.length">               
                 <mat-card-subtitle *ngFor='let message of messageService.messages'><span>{{message}}</span></mat-card-subtitle>               
             </mat-card-content> 
-            <mat-form-field *ngIf="messageService.messages.length">                                                                                                      
-                <button mat-raised-button  (click)="messageService.clear()">Clear</button>
-            </mat-form-field>
+            <div *ngIf="messageService.messages.length">                                                                                                      
+                <button mat-fab color="primary" (click)="messageService.clear()">Clear</button>
+            </div>
           </mat-card>
 
       </div>
